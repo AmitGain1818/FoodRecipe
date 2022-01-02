@@ -18,11 +18,11 @@ class RecipeCard extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       height: 180,
       decoration: BoxDecoration(
-        color: Colors.black,
+        color: Colors.blue,
         borderRadius: BorderRadius.circular(15),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.6),
+            color: Colors.blue.withOpacity(0.6),
             offset: Offset(
               0.0,
               10.0,
@@ -33,7 +33,7 @@ class RecipeCard extends StatelessWidget {
         ],
         image: DecorationImage(
           colorFilter: ColorFilter.mode(
-            Colors.black.withOpacity(0.35),
+            Colors.blue.withOpacity(0.35),
             BlendMode.multiply,
           ),
           image: NetworkImage(thumbnailUrl),
@@ -49,6 +49,7 @@ class RecipeCard extends StatelessWidget {
                 title,
                 style: TextStyle(
                   fontSize: 19,
+                  color: Color(0xFF8A00F4),
                 ),
                 overflow: TextOverflow.ellipsis,
                 maxLines: 2,
@@ -65,7 +66,7 @@ class RecipeCard extends StatelessWidget {
                   padding: EdgeInsets.all(5),
                   margin: EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.4),
+                    color: Colors.pink.withOpacity(0.4),
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Row(
@@ -84,7 +85,7 @@ class RecipeCard extends StatelessWidget {
                   padding: EdgeInsets.all(5),
                   margin: EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.4),
+                    color: Colors.pink.withOpacity(0.4),
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Row(
